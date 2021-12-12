@@ -1,0 +1,12 @@
+
+.basic-grid {
+    display: grid;
+    gap: 1rem;
+    /* grid-template-columns: repeat(12, 1fr); */
+
+    /* better sizing but overflows */
+    /* grid-template-columns: repeat(12, minmax(240px, 1fr)); */
+
+    /* fit and wrap to another row */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
